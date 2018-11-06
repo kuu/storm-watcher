@@ -1,0 +1,38 @@
+{
+  "name": "storm-watcher",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "xo",
+    "start": "forever start --spinSleepTime 10000 -o server.log -e error.log ./index.js",
+    "stop": "forever stop ./index.js"
+  },
+  "author": "Kuu Miyazaki",
+  "license": "MIT",
+  "dependencies": {
+    "config": "^2.0.1",
+    "debug": "^4.1.0",
+    "forever": "^0.15.3",
+    "node-fetch": "^2.2.1"
+  },
+  "devDependencies": {
+    "xo": "^0.23.0"
+  },
+  "xo": {
+    "esnext": true,
+    "space": true,
+    "rules": {
+      "capitalized-comments": 0,
+      "dot-notation": 0,
+      "new-cap": 0,
+      "no-cond-assign": 0,
+      "no-mixed-operators": 0,
+      "no-multi-assign": 0,
+      "no-template-curly-in-string": 0,
+      "import/no-dynamic-require": 0,
+      "unicorn/filename-case": 0,
+      "unicorn/catch-error-name": 0
+    }
+  }
+}
