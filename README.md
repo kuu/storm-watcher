@@ -1,7 +1,7 @@
 # storm-watcher
 
 # Install
-
+Go download [node](https://nodejs.org) first.
 ```
 $ git clone https://github.com/kuu/storm-watcher.git
 $ cd storm-watcher
